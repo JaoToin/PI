@@ -12,8 +12,8 @@ idade = int(input("Qual a idade do Candidato?"))
  
 while idade != 0:
 
-    sexo = str(input("Digite M para masculino ou F para feminino. "))
-    exp = str(input("Digite S para se tem experiência ou N para não. "))
+    sexo = str(input("Digite M para masculino ou F para feminino. ")).upper
+    exp = str(input("Digite S para se tem experiência ou N para não. ")).upper
 
     if sexo == 'M':
         qtdMasculina += 1

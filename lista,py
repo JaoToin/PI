@@ -1,0 +1,58 @@
+vetor = []
+
+vetor.append(15)
+vetor.append(18) # append => vc vai adicionar no arraay 
+vetor.append(20)
+
+vetor[1] = 50 # [1] posição 1
+vetor[3] = 36 # [3]  posição 3
+
+
+
+#-----------------------------------ordenação
+
+lista = [9,5,6,7,3]
+
+lista.sort(reverse= True)
+
+lista.sort()
+
+
+#------------------------------------ busca binaria
+
+listar = []
+numero = int(input())
+
+inicio = 0
+fim = len(listar) - 1
+achou = False
+meio = None
+
+while (inicio <= fim) & (not achou):
+    meio = (inicio + fim ) // 2
+    if numero < listar[meio]:
+        fim = meio - 1 
+    elif numero > listar[meio]:
+        inicio = meio + 1 
+    else:
+        achou
+
+#------------------- concatenação
+
+a = [1,2,5,9,8]
+b = [15,36,98,100]
+c = a + b
+print(c)
+
+#-------------------- particionando
+
+t = [3,6,9,8,5,2,0,1,4,7]
+
+t[1:3]
+
+print(t)
+
+#--------------------- localização de um valor 
+
+nums = [0,1,2,3,6,9,8,5,7,4]
+print(nums.index(9))
